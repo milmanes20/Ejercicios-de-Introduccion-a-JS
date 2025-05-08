@@ -55,19 +55,19 @@ describe('nuevoBool', function() {
 });
 
 describe('nuevaResta', function() {
-  it('Deberia ser un booleano', function() {
+  it('Deberia ser un booleano', function() { // Nota: Este mensaje parece incorrecto dado el nombre de la función. Debería ser 'Debería devolver la resta...' o similar si la función realiza una resta. Si la variable es un booleano, el mensaje está bien pero el nombre 'nuevaResta' podría ser confuso.
     expect(nuevaResta).toBe(true);
   });
 });
 
 describe('nuevaMultiplicacion', function() {
-  it('Deberia ser un booleano', function() {
+  it('Deberia ser un booleano', function() { // Nota: Similar a nuevaResta, este mensaje puede ser confuso.
     expect(nuevaMultiplicacion).toBe(true);
   });
 });
 
 describe('nuevoModulo', function() {
-  it('Deberia ser un booleano', function() {
+  it('Deberia ser un booleano', function() { // Nota: Similar a nuevaResta, este mensaje puede ser confuso.
     expect(nuevoModulo).toBe(true);
   });
 });
@@ -239,39 +239,39 @@ describe('obtenerAreaRectangulo(alto, ancho)', function() {
 });
 
 describe('obtenerMayor(x, y)', function() {
-  it('should return x if it is larger than y', function() {
+  it('Debería devolver x si es mayor que y', function() {
     expect(obtenerMayor(10, 5)).toBe(10);
   });
-  it('should return y if it is larger than x', function() {
+  it('Debería devolver y si es mayor que x', function() {
     expect(obtenerMayor(50, 100)).toBe(100);
   });
-  it('should return either one if they are the same', function() {
+  it('Debería devolver cualquiera de los dos si son iguales', function() {
     expect(obtenerMayor(1000, 1000)).toBe(1000);
   });
 });
 
 describe('saludo(idioma)', function() {
-  it('should return \'Guten Tag!\' for aleman', function() {
+  it('Debería devolver \'Guten Tag!\' para aleman', function() {
     expect(saludo('aleman')).toBe('Guten Tag!');
   });
-  it('should return \'Hola!\' for ingles', function() {
+  it('Debería devolver \'Hello!\' para ingles', function() { // Aquí 'ingles' se refiere al idioma que se pasa como argumento, la respuesta de la función es en inglés.
     expect(saludo('ingles')).toBe('Hello!');
   });
-  it('should return \'Ni Hao!\' for mandarin', function() {
+  it('Debería devolver \'Ni Hao!\' para mandarin', function() {
     expect(saludo('mandarin')).toBe('Ni Hao!');
   });
-  it('should return \'Hola!\' if no argument is passed in or if a idioma beyond ingles, mandarin, and aleman is passed in.', function() {
+  it('Debería devolver \'Hola!\' si no se pasa ningún argumento o si se pasa un idioma distinto a ingles, mandarin y aleman.', function() {
     expect(saludo('frances')).toBe('Hola!');
     expect(saludo()).toBe('Hola!');
   });
 });
 
 describe('esDiezOCinco(num)', function() {
-  it('should return true if num is 10 or 5', function() {
+  it('Debería devolver true si num es 10 o 5', function() {
     expect(esDiezOCinco(10)).toBe(true);
     expect(esDiezOCinco(5)).toBe(true);
   });
-  it('should return false if num is not 10 or 5', function() {
+  it('Debería devolver false si num no es 10 o 5', function() {
     expect(esDiezOCinco(11)).toBe(false);
     expect(esDiezOCinco(6)).toBe(false);
     expect(esDiezOCinco(0)).toBe(false);
@@ -280,13 +280,13 @@ describe('esDiezOCinco(num)', function() {
 });
 
 describe('estaEnRango(num)', function() {
-  it('should return true if num is inside range', function() {
+  it('Debería devolver true si num está dentro del rango', function() {
     expect(estaEnRango(35.5)).toBe(true);
     expect(estaEnRango(40)).toBe(true);
     expect(estaEnRango(49)).toBe(true);
     expect(estaEnRango(21)).toBe(true);
   });
-  it('should return false if outside of range', function() {
+  it('Debería devolver false si está fuera del rango', function() {
     expect(estaEnRango(10)).toBe(false);
     expect(estaEnRango(20)).toBe(false);
     expect(estaEnRango(50)).toBe(false);
@@ -295,41 +295,41 @@ describe('estaEnRango(num)', function() {
 });
 
 describe('esEntero(num)', function() {
-  it('should return true if num is 5', function() {
+  it('Debería devolver true si num es 5', function() {
     expect(esEntero(5)).toBe(true);
   });
-  it('should return false if num is 0.5', function() {
+  it('Debería devolver false si num es 0.5', function() {
     expect(esEntero(0.5)).toBe(false);
   });
-  it('should return true if num is -20', function() {
+  it('Debería devolver true si num es -20', function() {
     expect(esEntero(-20)).toBe(true);
   });
-  it('should return true for 0', function() {
+  it('Debería devolver true para 0', function() {
     expect(esEntero(0)).toBe(true);
   });
 });
 
 describe('fizzBuzz(num)', function() {
-  it('should return fizz if divisible by 3', function() {
+  it('Debería devolver fizz si es divisible por 3', function() {
     expect(fizzBuzz(9)).toBe('fizz');
   });
-  it('should return buzz if divisible by 5', function() {
+  it('Debería devolver buzz si es divisible por 5', function() {
     expect(fizzBuzz(10)).toBe('buzz');
   });
-  it('should return fizzbuzz if divisible by 3 and 5', function() {
+  it('Debería devolver fizzbuzz si es divisible por 3 y 5', function() {
     expect(fizzBuzz(15)).toBe('fizzbuzz');
   });
-  it('should return num if not divisible by 3 or 5', function() {
+  it('Debería devolver num si no es divisible por 3 o 5', function() {
     expect(fizzBuzz(4)).toBe(4);
   });
 });
 
 describe('esPrimo(num)', function() {
-  it('should return true if num is prime', function() {
+  it('Debería devolver true si num es primo', function() {
     expect(esPrimo(7)).toBe(true);
     expect(esPrimo(97)).toBe(true);
   });
-  it('should return false if num is not prime', function() {
+  it('Debería devolver false si num no es primo', function() {
     expect(esPrimo(10)).toBe(false);
     expect(esPrimo(100)).toBe(false);
     expect(esPrimo(0)).toBe(false);
