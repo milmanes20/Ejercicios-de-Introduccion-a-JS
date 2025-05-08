@@ -8,7 +8,7 @@ En esta lección cubriremos:
 * Math
 * Introducción a las Funciones
 * Control de flujo y operadores de comparación
-* * `Undefined` y `null`
+* `Undefined` y `null`
 * Operadores de comparación (continuación)
 * Flujos de control (continuación)
 * Operados lógicos
